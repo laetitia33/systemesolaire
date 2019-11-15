@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta name="Language" CONTENT="fr" />
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Système solaire</title>
+      <meta name="description" content="Page d'accueil" />
+      <meta name="keywords" content="Accueil" />
+      <meta name="author" content="Laetitia Bernardi" />
+      <link rel="shortcut icon" href="assets/favicon.ico">
+      <link rel="stylesheet" type="text/css" href="style.css" />
+      <link href='https://fonts.googleapis.com/css?family=Lora%7CLobster%7CEngagement%7CSlabo+27px%7CMerriweather%7CIndie+Flower%7CBlack+Ops+One%7CRoboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+      <script src="js/fontawesome.js"></script>
+      <!--jquery https://kit.fontawesome.com/285cdc047c.js-->
+      <script  src="js/jquery-2.2.4.min.js"></script>
+      <script  src="js/jquery-ui.min.js"></script>
+      <!---animations en css et jquery-->
+      <link rel="stylesheet" href="js/animate.css">
+      <script  src="js/animateCss.js"></script>
+   <body>
+      <div class="header" id="header">
+         <h1>laetitia bernardi</h1>
+         <h2 class="terminal">Système solaire </h2>
+         <h3 class='query'>'Ce site , pour des raisons de visibilité, a été optimisé pour être lu uniquement sur des écrans d'ordinateurs et de tv <br>
+        </h3>
+
+      </div>
+      <!--controle du systeme solaire -->
+      <div id='controls'>
+         <button id='normal'> 3D</button>
+         <button id='naturel'>2D</button>
+      </div>
+      <button id='btn-grad'>TV DIRECT NASA</button>
+      <!--planètes et lunes-->
+      <span  class="scroll-to" style="display: inline;"><i class="fa fa-chevron-up"></i></span>
+      <div class="solarsystem">
+         <div id="Soleil" class='planet'>
+            <h3>Soleil</h3>
+            <img src="assets/images/sun.png" alt='soleil'>					
+            <p>
+               Le Soleil est l'étoile au centre du système solaire. Il est presque parfaitement sphérique et consiste en un plasma chaud entrelacé de champs magnétiques.<br>
+               Distance jusqu'à Terre: 149 600 000 km (92 96 000 000 km)<br>
+               Température de surface: 5 778 K<br>
+               Masse: 1,998E30 kg.<br>	
+            </p>
+         </div>
+         <div id="Mercure" class="planet">
+            <h3>Mercure</h3>
+            <img src="assets/images/mercure.png" alt='mercure'>
+            <p>Mercure est la plus petite et la plus proche du Soleil parmi les huit planètes du système solaire, avec une période orbitale d’environ 88 jours Terre.
+               Surface: 28,88 millions de miles carrés (74,8 millions de km²)
+               Rayon: 2 440 km
+               Période orbitale: 88 jours
+               Distance du Soleil: 35 980 000 miles (57 910 000 km)
+               Masse: 328,5E21 kg (masse de 0,055 Terre)
+               Durée du jour: 58j 15h 30m
+            </p>
+         </div>
+         <div id="Venus" class="planet">
+            <h3>Venus</h3>
+            <img src="assets/images/venus.png" alt='venus'>
+            <p>
+               Vénus est la deuxième planète du Soleil, la gravitant tous les 224,7 jours en Terre. Il n'a pas de satellite naturel. Il est nommé d'après la déesse romaine de l'amour et de la beauté.
+               Surface: 177,7 millions de miles carrés (460,2 millions de km²)
+               Rayon: 6 052 km
+               Durée de la journée: 116j 18h 0m
+               Masse: 4.867E24 kg (masse de 0.815 Terre)
+               Période orbitale: 225 jours
+               Gravité: 8.87 m / s²
+            </p>
+         </div>
+         <div id="Terre" class="planet" >
+            <h3>Terre</h3>
+            <img src="assets/images/terre.png" alt='terre'>
+            <div id="moon">
+               <div></div>
+            </div>
+            <p>
+               Terre, également connue sous le nom de monde, Terra ou Gaia, est la troisième planète du Soleil, la plus dense du système solaire, la plus grande des quatre planètes terrestres du système solaire et le seul corps céleste connu pour accueillir la vie.
+               Age: 4,54 milliards d'années
+               Rayon: 3 379 km (6 371 km)
+               Distance du Soleil: 149 600 000 km
+               Masse: 5.972E24 kg
+               Population: 7,046 milliards (2012)
+            </p>
+         </div>
+         <div id="Mars" class="planet mars">
+            <h3>Mars</h3>
+            <img src="assets/images/mars.png" alt='mars'>
+            <div id="phobos">
+               <div></div>
+            </div>
+            <div id="deimos">
+               <div></div>
+            </div>
+            <p>Mars est la quatrième planète du Soleil et la deuxième plus petite planète du système solaire, après Mercure.
+               Gravité: 3.711 m / s²
+               Surface: 55,91 millions de miles carrés (144,8 millions de km²)
+               Rayon: 2 390 miles (3 390 km)
+               Masse: 639E21 kg (masse de 0,107 Terre)
+               Période orbitale: 687 jours
+            </p>
+         </div>
+         <div id="Asteroides" class="planet asteroids">
+            <div class="asteroids__inner"></div>
+            <h3>Ceinture d'astéroides</h3>
+            <p>La ceinture principale d'astéroïdes (parfois juste ceinture d'astéroïdes ou ceinture principale) est une région du Système solaire située entre les orbites de Mars et Jupiter. Elle contient un grand nombre d'astéroïdes.
+               La ceinture d’astéroïdes contient la plupart des astéroïdes de notre Système solaire, comme (1417) Walinskia et des milliers d'autres.
+            </p>
+         </div>
+         <div id="Jupiter" class="planet">
+            <h3>Jupiter</h3>
+            <img src="assets/images/jupiter.png" alt='jupiter'>
+            <div id="io">
+               <div></div>
+            </div>
+            <div id="europe">
+               <div></div>
+            </div>
+            <div id="ganymède">
+               <div></div>
+            </div>
+            <div id="callisto">
+               <div></div>
+            </div>
+            <p>Jupiter est la cinquième planète du Soleil et la plus grande planète du système solaire. C'est un géant gazier dont la masse est un millième de celle du Soleil, mais deux fois et demie la masse de toutes les autres planètes du système solaire combinées.
+               Surface: 23,41 milliards de miles carrés (61,42 milliards de km²)
+               Rayon: 43 441 milles (69 911 km)
+               Masse: 1.898E27 kg (masse de 317,8 Terre)
+               Gravité: 24.79, m / s²
+               Période orbitale: 12 ans
+            </p>
+            <span ><img src="assets/images/jupiter.png" alt='jupiter'/></span>
+         </div>
+         <div id="Saturne" class="planet">
+            <h3>Saturne</h3>
+            <img src="assets/images/saturne.png" alt='saturne'>
+            <div id="janus">
+               <div></div>
+            </div>
+            <div id="mimas">
+               <div></div>
+            </div>
+            <div id="encelade">
+               <div></div>
+            </div>
+            <div id="tethis">
+               <div></div>
+            </div>
+            <div id="dione">
+               <div></div>
+            </div>
+            <div id="rhea">
+               <div></div>
+            </div>
+            <div id="titan">
+               <div></div>
+            </div>
+            <div id="hyperion">
+               <div></div>
+            </div>
+            <div id="japet">
+               <div></div>
+            </div>
+            <div id="phoebe">
+               <div></div>
+            </div>
+            <p>Saturne est la sixième planète du Soleil et la deuxième plus grande planète du système solaire, après Jupiter. Nommé d'après le dieu romain de l'agriculture, son symbole astronomique représente la faucille du dieu.
+               Rayon: 36 184 km (58 232 km)
+               Surface: 42,7 milliards de km² (16,49 milliards de miles carrés)
+               Masse: 568,3E24 kg (masse de 95,16 Terre)
+               Gravité: 10.44 m / s²
+               Période orbitale: 29 ans
+            </p>
+         </div>
+         <div id="Uranus" class="planet">
+            <h3>Uranus</h3>
+            <img src="assets/images/uranus.png" alt='uranus'>
+            <div id="miranda">
+               <div></div>
+            </div>
+            <div id="ariel">
+               <div></div>
+            </div>
+            <div id="umbriel">
+               <div></div>
+            </div>
+            <div id="titania">
+               <div></div>
+            </div>
+            <div id="oberon">
+               <div></div>
+            </div>
+            <p>
+               Uranus est la septième planète du Soleil. Il possède le troisième plus grand rayon planétaire et la quatrième plus grande masse planétaire du système solaire.
+               Surface: 3.121 milliards de miles carrés (8.083 milliards de km²)
+               Rayon: 25 752 km
+               Période orbitale: 84 ans
+               Masse: 86.81E24 kg (masse de 14.54 Terre)
+               Gravité: 8,69 m / s²
+            </p>
+         </div>
+         <div id="Neptune" class="planet">
+            <h3>Neptune</h3>
+            <img src="assets/images/neptune.png" alt='neptune'>
+            <div id="triton">
+               <div></div>
+            </div>
+            <div id="proteus">
+               <div></div>
+            </div>
+            <p>
+               Neptune est la huitième et la plus éloignée planète du Soleil dans le système solaire. C'est la quatrième plus grande planète en diamètre et la troisième en masse. Parmi les planètes gazeuses du système solaire, Neptune est la plus dense.
+               Surface: 2.941 milliards de miles carrés (7.618 milliards de km²)
+               Rayon: 15 299 milles (24 622 km)
+               Période orbitale: 165 ans
+               Masse: 102.4E24 kg (masse de 17.15 Terre)
+               Distance du Soleil: 2,798,000,000 miles (4,503,000,000 km)
+            </p>
+         </div>
+      </div>
+      <!--boutons d'informations planètes avec sons-->
+      <div id="sidebar">
+         <div id="sidebar_btn">
+            <a href ='#'   class='Soleil'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Soleil
+            </a>
+            <audio id='beep-two0' controls preload="auto">
+               <source  src="assets/sons/beep.mp3">
+               <source src="assets/sons/beep.ogg">
+               Your browser isn't invited for super fun audio time.
+            </audio>
+            <audio id='beep-two1' controls preload="auto">
+               <source  src="assets/sons/beep.mp3">
+               <source src="assets/sons/beep.ogg">
+               Your browser isn't invited for super fun audio time.
+            </audio>
+            <a href ='#' class='Mercure'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Mercure
+            </a>
+            <audio id='beep-two2' controls preload="auto">
+               <source  src="assets/sons/beep.mp3">
+               <source src="assets/sons/beep.ogg">
+               Your browser isn't invited for super fun audio time.
+            </audio>
+            <a href ='#' class='Venus'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Venus
+            </a>
+            <audio id='beep-two3' controls preload="auto">
+               <source  src="assets/sons/beep.mp3">
+               <source src="assets/sons/beep.ogg">
+               Your browser isn't invited for super fun audio time.
+            </audio>
+            <a href ='#' class='Terre'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Terre
+            </a>
+            <audio id='beep-two4' controls preload="auto">
+               <source  src="assets/sons/beep.mp3">
+               <source src="assets/sons/beep.ogg">
+               Your browser isn't invited for super fun audio time.
+            </audio>
+            <a href ='#' class='Mars'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Mars
+            </a>
+            <audio id='beep-two5' controls preload="auto">
+               <source  src="assets/sons/beep.mp3">
+               <source src="assets/sons/beep.ogg">
+               Your browser isn't invited for super fun audio time.
+            </audio>
+            <a href ='#' class='Jupiter'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Jupiter
+            </a>
+            <audio id='beep-two6' controls preload="auto">
+               <source  src="assets/sons/beep.mp3">
+               <source src="assets/sons/beep.ogg">
+               Your browser isn't invited for super fun audio time.
+            </audio>
+            <a href ='#' class='Saturne'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Saturne
+            </a>
+            <audio id='beep-two7' controls preload="auto">
+               <source  src="assets/sons/beep.mp3">
+               <source src="assets/sons/beep.ogg">
+               Your browser isn't invited for super fun audio time.
+            </audio>
+            <a href ='#' class='Uranus'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Uranus
+            </a>
+            <audio id='beep-two8' controls preload="auto">
+               <source  src="assets/sons/beep.mp3">
+               <source src="assets/sons/beep.ogg" >
+               Your browser isn't invited for super fun audio time.
+            </audio>
+            <a href ='#' class='Neptune'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Neptune
+            </a>
+            <audio id='beep-two9' controls preload="auto">
+               <source  src="assets/sons/beep.mp3">
+               <source src="assets/sons/beep.ogg">
+               Your browser isn't invited for super fun audio time.
+            </audio>
+            <a href ='#' class='Asteroides'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Ceinture d'asteroïdes
+            </a>
+         </div>
+         <div class="popup">
+            <a id='stop'>X</a>
+            <h1>planète:</h1>
+            <p></p>
+            <a id="wiki"></a>
+            <span><img src='../..' alt='planetes'></span>
+         </div>
+      </div>
+      <div class="wrapper" id='wrapper'>
+         <div class="container">
+            <img class="overlay" src="assets/images/tv.png" alt="encadrement ancienne tv">
+            <iframe  src="https://www.youtube-nocookie.com/embed/21X5lGlDOfg"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+         </div>
+      </div>
+      <footer>
+         <p style='text-align:center;color:white'>&copy; 2019 Laetita Bernardi - Tous droits réservés<br></p>
+      </footer>
+      <script src="js/script.js"></script>
+      <script src="js/letter.js"></script>
